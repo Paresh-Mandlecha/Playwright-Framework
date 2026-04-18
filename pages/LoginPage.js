@@ -12,7 +12,7 @@ export class LoginPage{
     }
             //here we have to create login method and pass username and password as argument from loginlocators.js file
         async login(username,password){
-        await this.page.fill(LoginLocators.usernameInput, username);
+        await this.page.fill(LoginLocators.usernameInput,username);
         await this.page.fill(LoginLocators.passwordInput, password);
         await this.page.click(LoginLocators.loginButton);
     }
